@@ -42,6 +42,20 @@
         
         [rrCityViewController setIndex:myIndexPath];
     }
+    
+    
+    
+    if ([[segue identifier] isEqualToString:@"addcity"])
+    {
+       
+        RRAddCityControlerViewController *rrAddCityViewController =
+        [segue destinationViewController];
+        
+        
+        
+        //long row = [myIndexPath row];
+             NSLog(@"AAA_______________aaaa");
+    }
 }
 
 
@@ -73,15 +87,12 @@
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     UITableViewCell *cell= [tableView dequeueReusableCellWithIdentifier:@"cell"];
-       UITableViewCell *celladd= [tableView dequeueReusableCellWithIdentifier:@"celladd"];
+    
     if(nil==cell)
     {
     cell= [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:@"cell"];
     }
-    if(nil==cell)
-    {
-        celladd= [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:@"celladd"];
-    }
+    
     
     
     if (indexPath.row < cities.count ) {
@@ -96,14 +107,7 @@
             [cell setSelectionStyle:UITableViewCellSelectionStyleNone];
         }
     
-    } else {
-        celladd.textLabel.text = @"Add New City !!!!...";
-        
-        celladd.textLabel.textColor = [UIColor lightGrayColor];
-        celladd.editingAccessoryType = UITableViewCellAccessoryDisclosureIndicator;
-        return celladd;
     }
-    
     
     return cell;
 }
@@ -112,8 +116,8 @@
     
     
     NSInteger count = cities.count;
-    if(self.editing) {
-        count = count + 1;
+  if(self.editing) {
+        count = count+1;
     }
     return count;
     
@@ -191,12 +195,13 @@
         RRCityViewController *cityview = [[RRCityViewController alloc] initWithIndexPath:indexPath];
         //[delegate.navController pushViewController:cityview animated:YES];
     }
+    /*
     if( indexPath.row == cities.count && self.editing ) {
         
-        NSLog(@"Puta mierda");
-        RRAddCityControlerViewController *addcity= [[RRAddCityControlerViewController alloc] init];
+        //NSLog(@"Puta mierda");
+        //RRAddCityControlerViewController *addcity= [[RRAddCityControlerViewController alloc] init];
       //  [delegate.navController pushViewController:addcity animated:YES];
-    }
+    }*/
     
     
     
@@ -211,7 +216,7 @@
     {
         return UITableViewCellEditingStyleDelete;
     } else {
-        return UITableViewCellEditingStyleInsert;
+        return UITableViewCellEditingStyleNone;
     }
 }
 

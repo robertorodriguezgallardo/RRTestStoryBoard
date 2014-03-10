@@ -8,10 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface RRAddCityControlerViewController : UIViewController <UITableViewDataSource,UITableViewDelegate>
+@interface RRAddCityControlerViewController : UIViewController <UITableViewDataSource,UITableViewDelegate,UIImagePickerControllerDelegate, UINavigationControllerDelegate>
 {
  
-    IBOutlet UITableView *miTabla;
+
     IBOutlet UITableViewCell *descriptionView;
     
     IBOutlet UITableViewCell *nameView;
@@ -20,8 +20,11 @@
     
     UIImage *cityPicture;
     //NSMutableArray *cities;
+    UIImagePickerController *pickerController;
 
 }
 - (IBAction)addPicture:(id)sender;
+- (IBAction)saveCity:(id)sender;
+@property (strong, nonatomic) IBOutlet UITableView *miTabla;
 
 @end

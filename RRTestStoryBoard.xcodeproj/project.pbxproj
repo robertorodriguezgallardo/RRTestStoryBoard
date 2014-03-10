@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A3B2D83018BE64BF000E27B6 /* RRAddCityControlerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A3B2D82F18BE64BF000E27B6 /* RRAddCityControlerViewController.m */; };
 		A3CB959318BBA20600B35716 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3CB959218BBA20600B35716 /* Foundation.framework */; };
 		A3CB959518BBA20600B35716 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3CB959418BBA20600B35716 /* CoreGraphics.framework */; };
 		A3CB959718BBA20600B35716 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3CB959618BBA20600B35716 /* UIKit.framework */; };
@@ -31,7 +32,6 @@
 		A3CB95DA18BBB2AE00B35716 /* img1.png in Resources */ = {isa = PBXBuildFile; fileRef = A3CB95D518BBB2AE00B35716 /* img1.png */; };
 		A3CB95DD18BBB2E200B35716 /* RRCityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A3CB95DC18BBB2E200B35716 /* RRCityViewController.m */; };
 		A3CB95E018BBB32300B35716 /* RRViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A3CB95DF18BBB32300B35716 /* RRViewController.m */; };
-		A3CB95E318BBBDA100B35716 /* RRAddCityControlerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A3CB95E218BBBDA000B35716 /* RRAddCityControlerViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +45,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A3B2D82E18BE64BF000E27B6 /* RRAddCityControlerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RRAddCityControlerViewController.h; sourceTree = "<group>"; };
+		A3B2D82F18BE64BF000E27B6 /* RRAddCityControlerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RRAddCityControlerViewController.m; sourceTree = "<group>"; };
 		A3CB958F18BBA20600B35716 /* RRTestStoryBoard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RRTestStoryBoard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3CB959218BBA20600B35716 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		A3CB959418BBA20600B35716 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -78,8 +80,6 @@
 		A3CB95DC18BBB2E200B35716 /* RRCityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RRCityViewController.m; sourceTree = "<group>"; };
 		A3CB95DE18BBB32300B35716 /* RRViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RRViewController.h; sourceTree = "<group>"; };
 		A3CB95DF18BBB32300B35716 /* RRViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RRViewController.m; sourceTree = "<group>"; };
-		A3CB95E118BBBDA000B35716 /* RRAddCityControlerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RRAddCityControlerViewController.h; sourceTree = "<group>"; };
-		A3CB95E218BBBDA000B35716 /* RRAddCityControlerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RRAddCityControlerViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,9 +109,9 @@
 		A3CB958618BBA20600B35716 = {
 			isa = PBXGroup;
 			children = (
+				A3B2D82E18BE64BF000E27B6 /* RRAddCityControlerViewController.h */,
+				A3B2D82F18BE64BF000E27B6 /* RRAddCityControlerViewController.m */,
 				A3CB95D118BBB2AE00B35716 /* 02.jpg */,
-				A3CB95E118BBBDA000B35716 /* RRAddCityControlerViewController.h */,
-				A3CB95E218BBBDA000B35716 /* RRAddCityControlerViewController.m */,
 				A3CB95D218BBB2AE00B35716 /* 3.png */,
 				A3CB95D318BBB2AE00B35716 /* 4.png */,
 				A3CB95D418BBB2AE00B35716 /* drslump.jpg */,
@@ -308,7 +308,7 @@
 			files = (
 				A3CB95D018BBB28B00B35716 /* RRCity.m in Sources */,
 				A3CB95E018BBB32300B35716 /* RRViewController.m in Sources */,
-				A3CB95E318BBBDA100B35716 /* RRAddCityControlerViewController.m in Sources */,
+				A3B2D83018BE64BF000E27B6 /* RRAddCityControlerViewController.m in Sources */,
 				A3CB95DD18BBB2E200B35716 /* RRCityViewController.m in Sources */,
 				A3CB95CC18BBA8AA00B35716 /* RRUInavDemo.m in Sources */,
 				A3CB95AC18BBA20600B35716 /* ViewController.m in Sources */,
@@ -532,6 +532,7 @@
 				A3CB95C618BBA20600B35716 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A3CB95C718BBA20600B35716 /* Build configuration list for PBXNativeTarget "RRTestStoryBoardTests" */ = {
 			isa = XCConfigurationList;
@@ -540,6 +541,7 @@
 				A3CB95C918BBA20600B35716 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
